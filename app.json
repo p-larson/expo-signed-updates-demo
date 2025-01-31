@@ -2,6 +2,33 @@
   "expo": {
     "name": "expo-signed-updates-demo",
     "slug": "expo-signed-updates-demo",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "extra": {
+      "eas": {
+        "projectId": "1c28d89e-a6f9-483f-91ed-33c07a76051d"
+      }
+    },
+    "runtimeVersion": "1.0.0",
+    "updates": {
+      "enabled": true,
+      "fallbackToCacheTimeout": 0,
+      "checkAutomatically": "NEVER",
+      "url": "https://u.expo.dev/1c28d89e-a6f9-483f-91ed-33c07a76051d",
+      "codeSigningCertificate": "./certs/certificate.pem",
+      "codeSigningMetadata": {
+        "keyid": "main",
+        "alg": "rsa-v1_5-sha256"
+      },
+      "plugins": [
+        [
+          "expo-dev-client",
+          {
+            "launchMode": "most-recent"
+          }
+        ]
+      ]
+    },
+    "android": {},
+    "ios": {}
   }
 }
